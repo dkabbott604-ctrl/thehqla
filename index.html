@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE HQ LA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PASSWORD SCREEN -->
+  <div id="password-screen">
+    <div class="pw-box">
+      <div class="pw-logo">THE HQ LA</div>
+      <p class="pw-subtitle">Members Only</p>
+      <form id="pw-form">
+        <input type="password" id="pw-input" placeholder="Enter Password" autocomplete="off" />
+        <button type="submit">ENTER</button>
+      </form>
+      <p id="pw-error" class="pw-error hidden">Incorrect password. Try again.</p>
+    </div>
+  </div>
+
+  <!-- MAIN SITE -->
+  <div id="main-site" class="hidden">
+
+    <!-- NAV -->
+    <header>
+      <nav>
+        <div class="nav-logo" onclick="showPage('home')">THE HQ LA</div>
+        <ul class="nav-links">
+          <li><a href="#" onclick="showPage('flower')">Flower</a></li>
+          <li><a href="#" onclick="showPage('reviews')">Reviews</a></li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+          <li><a href="#" onclick="showPage('misc')">Misc</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+      <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="#" onclick="showPage('flower'); toggleMenu()">Flower</a>
+        <a href="#" onclick="showPage('reviews'); toggleMenu()">Reviews</a>
+        <a href="#" onclick="showPage('about'); toggleMenu()">About Us</a>
+        <a href="#" onclick="showPage('misc'); toggleMenu()">Misc</a>
+      </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <section id="page-home" class="page active">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>THE HQ LA</h1>
+          <p class="hero-tagline">Los Angeles' Premier Destination</p>
+          <div class="hero-divider"></div>
+          <div class="hero-cards">
+            <div class="hero-card" onclick="showPage('flower')">
+              <div class="card-icon">🌸</div>
+              <h3>Flower</h3>
+              <p>Explore our collection</p>
+            </div>
+            <div class="hero-card" onclick="showPage('reviews')">
+              <div class="card-icon">⭐</div>
+              <h3>Reviews</h3>
+              <p>What people are saying</p>
+            </div>
+            <div class="hero-card" onclick="showPage('about')">
+              <div class="card-icon">🏛</div>
+              <h3>About Us</h3>
+              <p>Our story</p>
+            </div>
+            <div class="hero-card" onclick="showPage('misc')">
+              <div class="card-icon">✦</div>
+              <h3>Misc</h3>
+              <p>Everything else</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOWER PAGE -->
+    <section id="page-flower" class="page hidden">
+      <div class="page-header">
+        <h2>Flower</h2>
+        <div class="page-divider"></div>
+      </div>
+      <div class="content-grid">
+        <div class="content-card">
+          <div class="card-tag">Top Shelf</div>
+          <h3>Premium Selection</h3>
+          <p>Handpicked, small-batch flower curated for quality and potency. Every strain is sourced from trusted cultivators across California.</p>
+        </div>
+        <div class="content-card">
+          <div class="card-tag">Seasonal</div>
+          <h3>Seasonal Drops</h3>
+          <p>Limited seasonal offerings that rotate throughout the year. Sign up to be the first to know when new drops hit the floor.</p>
+        </div>
+        <div class="content-card">
+          <div class="card-tag">Curated</div>
+          <h3>Staff Picks</h3>
+          <p>Our team's personal favorites — tried, tested, and approved. These are the strains we keep coming back to.</p>
+        </div>
+        <div class="content-card">
+          <div class="card-tag">Exclusive</div>
+          <h3>Members Only</h3>
+          <p>Exclusive cultivar access available to HQ members only. Contact us to learn more about membership benefits.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS PAGE -->
+    <section id="page-reviews" class="page hidden">
+      <div class="page-header">
+        <h2>Reviews</h2>
+        <div class="page-divider"></div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"The atmosphere at THE HQ LA is unlike anything else in the city. Knowledgeable staff and an unmatched selection."</p>
+          <div class="reviewer">— Marcus T., Los Angeles</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"I've been coming here since they opened. The quality is consistently top-tier and the team genuinely cares."</p>
+          <div class="reviewer">— Jasmine R., Silver Lake</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Best in LA, hands down. The members-only feel makes every visit special. Worth every penny."</p>
+          <div class="reviewer">— Diego M., West Hollywood</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"THE HQ is where I send everyone I know. The curation is impeccable and the vibe is always on point."</p>
+          <div class="reviewer">— Aaliyah K., Culver City</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+          <p class="review-text">"Incredible selection and very welcoming staff. If you haven't been, you're seriously missing out on the HQ experience."</p>
+          <div class="reviewer">— Ryan P., Echo Park</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"This place sets the standard. Clean, professional, exclusive. Everything you want from a premium LA destination."</p>
+          <div class="reviewer">— Nina C., Bel Air</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="page-about" class="page hidden">
+      <div class="page-header">
+        <h2>About Us</h2>
+        <div class="page-divider"></div>
+      </div>
+      <div class="about-container">
+        <div class="about-block">
+          <h3>Our Story</h3>
+          <p>THE HQ LA was born from a simple idea: Los Angeles deserved a destination that treated quality as a non-negotiable. Founded by a team of lifelong Angelenos, we built THE HQ as a home base — a headquarters — for those who refuse to settle for anything less than the best.</p>
+        </div>
+        <div class="about-block">
+          <h3>Our Mission</h3>
+          <p>We exist to elevate the experience. Every product we carry, every person we hire, every detail of the space has been considered with one question in mind: does this serve our community at the highest level? If the answer is yes, it belongs here.</p>
+        </div>
+        <div class="about-block">
+          <h3>The Community</h3>
+          <p>THE HQ LA is more than a destination — it's a community. We are proud to serve the people of Los Angeles and to be part of a movement that values authenticity, quality, and connection. Welcome to the HQ.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Curated Products</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5★</span>
+            <span class="stat-label">Avg. Rating</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">LA</span>
+            <span class="stat-label">Born & Raised</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISC PAGE -->
+    <section id="page-misc" class="page hidden">
+      <div class="page-header">
+        <h2>Misc</h2>
+        <div class="page-divider"></div>
+      </div>
+      <div class="misc-container">
+        <div class="misc-block">
+          <h3>Hours</h3>
+          <div class="hours-list">
+            <div class="hours-row"><span>Monday – Friday</span><span>10am – 9pm</span></div>
+            <div class="hours-row"><span>Saturday</span><span>10am – 10pm</span></div>
+            <div class="hours-row"><span>Sunday</span><span>11am – 8pm</span></div>
+          </div>
+        </div>
+        <div class="misc-block">
+          <h3>Location</h3>
+          <p class="misc-text">Los Angeles, California</p>
+          <p class="misc-subtext">Exact address provided to verified members.</p>
+        </div>
+        <div class="misc-block">
+          <h3>Contact</h3>
+          <p class="misc-text">For inquiries, memberships, and press:</p>
+          <a href="mailto:info@thehqla.com" class="misc-link">info@thehqla.com</a>
+        </div>
+        <div class="misc-block">
+          <h3>Follow</h3>
+          <p class="misc-text">Stay connected with THE HQ LA community.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn">Instagram</a>
+            <a href="#" class="social-btn">Twitter / X</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <span class="footer-logo">THE HQ LA</span>
+        <span class="footer-copy">© 2026 The HQ LA. All rights reserved.</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
