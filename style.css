@@ -143,6 +143,15 @@ nav {
   height: 70px;
 }
 
+.nav-stamp {
+  height: 44px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(5deg) brightness(0.9);
+  transition: opacity 0.2s;
+}
+.nav-stamp:hover { opacity: 0.8; }
+
 .nav-logo {
   font-family: var(--font-serif);
   font-size: 1.4rem;
