@@ -143,6 +143,23 @@ nav {
   height: 70px;
 }
 
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  filter: invert(1) sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85);
+  transition: opacity 0.2s;
+  display: block;
+}
+.nav-logo-img:hover { opacity: 0.8; }
+
+.hero-logo-img {
+  width: clamp(200px, 35vw, 400px);
+  height: auto;
+  filter: invert(1) sepia(1) saturate(3) hue-rotate(5deg) brightness(0.85);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
 .nav-logo {
   font-family: var(--font-serif);
   font-size: 1.4rem;
