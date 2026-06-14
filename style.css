@@ -147,7 +147,7 @@ nav {
   height: 36px;
   width: auto;
   display: block;
-  filter: brightness(0) saturate(100%) invert(68%) sepia(47%) saturate(500%) hue-rotate(5deg) brightness(95%);
+  filter: invert(1);
   transition: opacity 0.2s;
 }
 .nav-stamp:hover { opacity: 0.8; }
