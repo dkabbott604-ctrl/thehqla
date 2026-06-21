@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "tag": "Top Shelf",
+    "name": "Premium Selection",
+    "description": "Handpicked, small-batch flower curated for quality and potency. Every strain is sourced from trusted cultivators across California."
+  },
+  {
+    "id": "2",
+    "tag": "Seasonal",
+    "name": "Seasonal Drops",
+    "description": "Limited seasonal offerings that rotate throughout the year. Sign up to be the first to know when new drops hit the floor."
+  },
+  {
+    "id": "3",
+    "tag": "Curated",
+    "name": "Staff Picks",
+    "description": "Our team's personal favorites — tried, tested, and approved. These are the strains we keep coming back to."
+  },
+  {
+    "id": "4",
+    "tag": "Exclusive",
+    "name": "Members Only",
+    "description": "Exclusive cultivar access available to HQ members only. Contact us to learn more about membership benefits."
+  }
+]

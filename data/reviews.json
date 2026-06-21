@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "stars": 5,
+    "text": "The atmosphere at THE HQ LA is unlike anything else in the city. Knowledgeable staff and an unmatched selection.",
+    "reviewer": "Marcus T., Los Angeles"
+  },
+  {
+    "id": "2",
+    "stars": 5,
+    "text": "I've been coming here since they opened. The quality is consistently top-tier and the team genuinely cares.",
+    "reviewer": "Jasmine R., Silver Lake"
+  },
+  {
+    "id": "3",
+    "stars": 5,
+    "text": "Best in LA, hands down. The members-only feel makes every visit special. Worth every penny.",
+    "reviewer": "Diego M., West Hollywood"
+  },
+  {
+    "id": "4",
+    "stars": 5,
+    "text": "THE HQ is where I send everyone I know. The curation is impeccable and the vibe is always on point.",
+    "reviewer": "Aaliyah K., Culver City"
+  },
+  {
+    "id": "5",
+    "stars": 4,
+    "text": "Best flower and genetics in LA. The team here are superstars.",
+    "reviewer": "Verified Guest"
+  },
+  {
+    "id": "6",
+    "stars": 4,
+    "text": "Incredible selection and very welcoming staff. If you haven't been, you're seriously missing out on the HQ experience.",
+    "reviewer": "Ryan P., Echo Park"
+  },
+  {
+    "id": "7",
+    "stars": 5,
+    "text": "This place sets the standard. Clean, professional, exclusive. Everything you want from a premium LA destination.",
+    "reviewer": "Nina C., Bel Air"
+  }
+]

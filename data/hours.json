@@ -1,0 +1,5 @@
+{
+  "monday_friday": { "label": "Monday – Friday", "open": "10am", "close": "9pm" },
+  "saturday": { "label": "Saturday", "open": "10am", "close": "10pm" },
+  "sunday": { "label": "Sunday", "open": "11am", "close": "8pm" }
+}
